@@ -42,7 +42,7 @@ namespace Diplom2.Controllers
                         StatusOrder = s.IdOrderNavigation.StatusOrder,
                         PriceOrder = s.IdOrderNavigation.PriceOrder,
                         IdSkidka = s.IdOrderNavigation.IdSkidka
-                    } : null,
+                    } : null, 
                     IdBuketNavigation = s.IdBuketNavigation != null? new BuketDTO
                     {
                         IdBuket = s.IdBuketNavigation.IdBuket,
@@ -64,6 +64,8 @@ namespace Diplom2.Controllers
 
                 }
             ).ToListAsync();
+
+            var tr = "ggf";
             return Ok(h);
         }
 
